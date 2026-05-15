@@ -152,8 +152,21 @@ const resumeFiles = [
 export default function App() {
   const [menuOpen, setMenuOpen] = useState(false)
   const [resumeText, setResumeText] = useState({})
+  const [copiedResume, setCopiedResume] = useState('')
 
   const closeMenu = () => setMenuOpen(false)
+
+  const copyResumeText = async (resumeKey) => {
+    const text = resumeText[resumeKey]
+    if (!text) return
+    try {
+      await navigator.clipboard.writeText(text)
+      setCopiedResume(resumeKey)
+      setTimeout(() => setCopiedResume(''), 1500)
+    } catch {
+      setCopiedResume('')
+    }
+  }
 
   useEffect(() => {
     let active = true
@@ -262,12 +275,21 @@ export default function App() {
               >
                 <div className="mb-2 flex items-center justify-between gap-2">
                   <h3 className="text-xs font-semibold text-white">{resume.title}</h3>
-                  <a
-                    href={resume.pdf}
-                    className="rounded-md border border-slate-600 px-3 py-1.5 text-sm font-semibold text-slate-100 transition hover:border-accent-300 hover:text-accent-300"
-                  >
-                    Download
-                  </a>
+                  <div className="flex items-center gap-2">
+                    <button
+                      type="button"
+                      onClick={() => copyResumeText(resume.key)}
+                      className="rounded-md border border-slate-600 px-3 py-1.5 text-sm font-semibold text-slate-100 transition hover:border-accent-300 hover:text-accent-300"
+                    >
+                      {copiedResume === resume.key ? 'Copied!' : 'Copy'}
+                    </button>
+                    <a
+                      href={resume.pdf}
+                      className="rounded-md border border-slate-600 px-3 py-1.5 text-sm font-semibold text-slate-100 transition hover:border-accent-300 hover:text-accent-300"
+                    >
+                      Download
+                    </a>
+                  </div>
                 </div>
                 <pre className="max-h-40 overflow-auto whitespace-pre-wrap text-[10px] leading-relaxed text-slate-300">
                   {resumeText[resume.key] || 'Loading resume preview...'}
