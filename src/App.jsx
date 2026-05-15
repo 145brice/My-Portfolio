@@ -62,7 +62,7 @@ const projects = [
     description:
       'Scrapes building permits across Houston, Charlotte, and Phoenix, filters by trade type (electrical, plumbing, HVAC), skip-traces contacts, and delivers fresh leads monthly.',
     tags: ['Python', 'Selenium', 'BeautifulSoup', 'Skip Tracing'],
-    links: []
+    links: [{ label: 'Live Demo', href: 'https://permits-front-end.vercel.app/' }]
   },
   {
     title: 'Property Manager Leads Service',
@@ -70,7 +70,7 @@ const projects = [
     description:
       'Identifies recently sold investor-owned properties (LLC, duplex, multi-unit) across Davidson County and 6 surrounding counties with daily skip-trace refresh.',
     tags: ['Python', 'Web Scraping', 'Nashville Market'],
-    links: []
+    links: [{ label: 'Live Demo', href: 'https://property-manager-dusky-five.vercel.app/' }]
   }
 ]
 
