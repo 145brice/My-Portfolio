@@ -75,6 +75,21 @@ const projects = [
   }
 ]
 
+const additionalProjectLinks = [
+  'https://processor-assistant.vercel.app/',
+  'https://property-manager-dusky-five.vercel.app/',
+  'https://divorce-calc-tn.vercel.app/',
+  'https://edge-landings.vercel.app/',
+  'https://pressure-washing-taupe.vercel.app/',
+  'https://ince-electric.vercel.app/',
+  'https://leasure-time-lawn-care.vercel.app/',
+  'https://realtors-commission.vercel.app/',
+  'https://permits-front-end.vercel.app/',
+  'https://leadbot-kappa.vercel.app/',
+  'https://edgebarberapply.vercel.app/',
+  'https://dallas-mortgage.vercel.app/'
+]
+
 const timeline = [
   'Software Developer & SaaS Founder | Feb 2025-Present',
   'Mortgage Processor (Broker) | Secured Mortgage Processing | 2022-2025',
@@ -297,6 +312,24 @@ export default function App() {
                 </div>
               </article>
             ))}
+          </div>
+
+          <div className="mt-10 rounded-xl border border-slate-700/70 bg-navy-800/30 p-5">
+            <h3 className="text-lg font-semibold text-white">Additional Live Projects</h3>
+            <div className="mt-4 grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
+              {additionalProjectLinks.map((url) => (
+                <a
+                  key={url}
+                  href={url}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="truncate rounded-md border border-slate-700 bg-navy-900/50 px-3 py-2 text-sm text-slate-200 transition hover:border-accent-300 hover:text-accent-300"
+                  title={url}
+                >
+                  {url.replace('https://', '').replace('/', '')}
+                </a>
+              ))}
+            </div>
           </div>
         </section>
 
