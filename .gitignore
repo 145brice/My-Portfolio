@@ -1,0 +1,5 @@
+node_modules/
+dist/
+_resumes/
+devserver.log
+.DS_Store

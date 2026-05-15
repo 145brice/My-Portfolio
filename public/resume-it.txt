@@ -1,0 +1,62 @@
+                                                  BRICE LEASURE
+                        NMLS #247673 | 615.922.0650 | 145brice@gmail.com | Mount Juliet, TN 37138
+
+PROFESSIONAL SUMMARY
+Software developer with 2 years building production AI-powered SaaS products (June 2024–Present), backed by 13+ years of
+mortgage industry expertise (NMLS licensed since 2010). Proven ability to identify operational inefficiencies, architect AI solutions,
+and ship products with paying customers. Strong in Python, web scraping, API integration, database design, and cloud
+deployment.
+
+TECHNICAL SKILLS
+  • Languages: Python, JavaScript, SQL, HTML/CSS
+  • Frameworks: FastAPI, React, Node.js, Express
+  • AI/ML: Gemini API, Claude API, OpenAI API, prompt engineering, document parsing
+  • Web Scraping: Selenium, BeautifulSoup, pdfplumber, anti-bot/stealth techniques
+  • Databases: PostgreSQL, Supabase, SQLite
+  • Cloud/DevOps: Railway, Vercel, GitHub, GitHub Codespaces, Git
+  • Payments: Stripe (Checkout, Webhooks, Subscriptions)
+  • Analytics: Power BI (Certified), Tableau (In Training)
+PROJECTS & PRODUCTS
+Processor Assistant | Live SaaS Product — Founder & Developer | 2024–Present
+  • AI-powered mortgage processing automation tool with paying customers
+  • Built document parsing engine using Gemini Vision API for scanned PDFs
+  • Designed role-specific language translation (borrower/appraiser/realtor)
+  • Implemented behavioral learning system that adapts UI based on user patterns
+  • Full-stack: Python backend, React frontend, Supabase auth/database, Stripe billing
+  • Architecture: 30K+ lines of code across 15+ modular files, deployed on Railway
+
+Contractor Leads SaaS | Multi-City Permit Platform — Founder & Developer | 2024–Present
+ • Web scraping platform pulling construction permits across Houston, Charlotte, Phoenix
+ • Multi-endpoint fallback logic for reliability across county data sources
+ • Skip-tracing integration for contact enrichment at scale
+ • Filtered by trade type (electrical, plumbing, HVAC) with automated delivery
+
+Property Manager Leads Service | Investor Property Platform — Founder & Developer | 2024–Present
+  • Automated identification of recently sold investor properties (LLC-owned, multi-unit)
+  • Nashville/Davidson County and surrounding 6-county coverage
+  • Skip-tracing pipeline with daily refresh and contact enrichment
+EXPERIENCE
+Independent Software Developer & Entrepreneur | Self-Employed | Feb 2025–Present
+  • Building and shipping SaaS products full-time while supplementing income through gig delivery (DoorDash, Uber Eats, Uber)
+
+Mortgage Loan Officer & Processor | Q Lending LLC — Mount Juliet, TN | Jan 2025–Feb 2025
+ • Qualified inbound leads from IDX websites and realtor referrals, built strategic partnerships
+
+Mortgage Processor (Broker) | Secured Mortgage Processing LLC — Mount Juliet, TN | Jan 2022–Jan 2025
+ • Processed Conv, Gov, FHA, VA, Non-QM, DSCR, HELOC with 24-48 hour condition turnaround
+ • Coordinated third-party vendors and managed CD timelines for on-time closings
+
+Additional mortgage experience (2016–2022): Loan Officer at Groves Capital, Lenox Financial, AmeriSave, Cahaba Mortgage,
+Wilson Bank & Trust. Processing Manager at L3 Discount Home Lending — built compliance workflows, DU/LP/GUS analysis.
+Mortgage Loan Processor at AmeriSave — #1 in loan quality submissions department-wide.
+
+EDUCATION
+BS/AS, Aviation Management | Southern Illinois University | 2004–2008
+AS, Science | Black Hawk Community College | 2001–2004
+
+CERTIFICATIONS
+  • NMLS #247673 — Licensed since 2010 (Available for State Licensing — Previously TX, FL, KY)
+  • Power BI A-Z Data Science — Certified
+  • Tableau Data Analyst/Specialist — In Training
+  • Private Pilot License
+

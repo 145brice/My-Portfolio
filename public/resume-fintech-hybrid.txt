@@ -1,0 +1,67 @@
+                                                   BRICE LEASURE
+                        NMLS #247673 | 615.922.0650 | 145brice@gmail.com | Mount Juliet, TN 37138
+
+PROFESSIONAL SUMMARY
+Mortgage technology builder and domain expert with 13+ years in the industry (NMLS licensed since 2010) and 2 years building
+AI-powered fintech SaaS products. Uniquely positioned at the intersection of mortgage operations expertise and full-stack software
+development. Shipped production tools with paying customers solving real pain points in loan processing, lead generation, and
+document automation.
+
+TECHNICAL SKILLS
+  • Languages: Python, JavaScript, SQL, HTML/CSS
+  • Frameworks: FastAPI, React, Node.js
+  • AI/ML: Gemini API, Claude API, OpenAI API, document parsing, prompt engineering
+  • Web Scraping: Selenium, BeautifulSoup, pdfplumber
+  • Databases: PostgreSQL, Supabase, SQLite
+  • Cloud/DevOps: Railway, Vercel, GitHub, Git
+  • Payments: Stripe (Checkout, Webhooks, Subscriptions)
+  • Mortgage Systems: Encompass, Calyx/Point, DU, LP, GUS
+  • Analytics: Power BI (Certified), Tableau (In Training)
+FINTECH PRODUCTS BUILT
+Processor Assistant | Founder & Developer — Live SaaS with Paying Customers | 2024–Present
+  • AI-powered mortgage processing tool: document parsing, condition extraction, borrower language translation
+  • Gemini Vision API for scanned PDF parsing; role-specific email generation (borrower/appraiser/realtor)
+  • Behavioral learning UI that adapts to each processor's workflow patterns
+  • Full-stack: Python/FastAPI backend, React frontend, Supabase, Stripe billing, Railway deployment
+
+Contractor Leads SaaS | Founder & Developer | 2024–Present
+ • Multi-city permit scraping platform (Houston, Charlotte, Phoenix) with trade filtering and skip-tracing
+
+Property Manager Leads Service | Founder & Developer | 2024–Present
+  • Investor property identification platform: LLC-filtered recently sold properties, Nashville metro, daily skip-trace refresh
+MORTGAGE INDUSTRY EXPERIENCE
+Independent Developer & Entrepreneur | Self-Employed | Feb 2025–Present
+  • Building mortgage automation SaaS products full-time
+
+Mortgage Loan Officer & Processor | Q Lending LLC — Mount Juliet, TN | Jan 2025–Feb 2025
+ • Qualified inbound leads from IDX websites and realtor referrals
+
+Mortgage Processor (Broker) — Licensed FL & KY | Secured Mortgage Processing LLC — Mount Juliet, TN |
+Jan 2022–Jan 2025
+  • Processed Conv, Gov, FHA, VA, Non-QM, DSCR, HELOC with 24-48 hour condition turnaround
+  • Coordinated third-party vendors and managed full pipeline from submission to closing
+
+Mortgage Loan Officer & Processor | Groves Capital — Mount Juliet, TN | Aug 2021–Jan 2022
+ • Built lead generation systems and Non-QM product relationships
+
+Mortgage Loan Officer | AmeriSave Mortgage Corporation — Mount Juliet, TN | Jul 2020–Mar 2021
+ • Top 25% performance ranking; averaged 4+ loans into processing weekly
+
+Processing Manager | L3 Discount Home Lending LLC — Louisville, KY | Apr 2017–Nov 2018
+  • Built all pipeline, submission, condition, and closing checklists from scratch
+  • Implemented compliance audit process; expert in DU/LP/GUS analysis
+Mortgage Loan Processor | AmeriSave Mortgage Corporation — Louisville, KY | Mar 2016–Jan 2017
+ • #1 in loan quality submissions to closing department-wide
+
+Earlier roles (2016–2022): Mortgage Loan Officer at Lenox Financial, Cahaba Mortgage, and Wilson Bank & Trust.
+
+EDUCATION
+BS/AS, Aviation Management | Southern Illinois University | 2004–2008
+AS, Science | Black Hawk Community College | 2001–2004
+
+CERTIFICATIONS
+  • NMLS #247673 — Licensed since 2010 (Available for State Licensing — Previously TX, FL, KY)
+  • Power BI A-Z Data Science — Certified
+  • Tableau Data Analyst/Specialist — In Training
+  • Private Pilot License
+
