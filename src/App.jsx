@@ -170,13 +170,34 @@ export default function App() {
 
   useEffect(() => {
     let active = true
+    const normalizeResumePreview = (rawText) => {
+      const base = rawText.replace(/\f/g, '\n')
+      const lines = base.split('\n')
+      const nonEmpty = lines.filter((line) => line.trim().length > 0)
+      const minIndent = nonEmpty.length
+        ? Math.min(
+            ...nonEmpty.map((line) => {
+              const match = line.match(/^(\s*)/)
+              return match ? match[1].length : 0
+            })
+          )
+        : 0
+      const unindented = lines
+        .map((line) => line.slice(minIndent).replace(/\s+$/, ''))
+        .join('\n')
+        .trim()
+
+      // Keep the NMLS line left-aligned and add breathing room before the name line.
+      return unindented.replace(/(NMLS[^\n]*)(\n)([A-Za-z][^\n]*)/g, '$1\n\n$3')
+    }
+
     const loadResumes = async () => {
       const entries = await Promise.all(
         resumeFiles.map(async (resume) => {
           try {
             const response = await fetch(resume.txt)
             const text = await response.text()
-            return [resume.key, text.replace(/\f/g, '\n').trim()]
+            return [resume.key, normalizeResumePreview(text)]
           } catch {
             return [resume.key, 'Preview unavailable. Use the download button to view this resume.']
           }
