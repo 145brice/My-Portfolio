@@ -230,6 +230,9 @@ export default function App() {
 
       <main>
         <section id="home" className="section-shell section-spacing pt-20 sm:pt-28">
+          <p className="mb-3 text-2xl font-bold uppercase tracking-[0.2em] text-accent-300 sm:text-3xl">
+            Portfolio
+          </p>
           <p className="mb-4 inline-flex rounded-full border border-accent-400/30 bg-accent-400/10 px-3 py-1 text-xs font-medium text-accent-300">
             Mortgage Automation Developer
           </p>
@@ -278,7 +281,7 @@ export default function App() {
             <a href="mailto:145brice@gmail.com" className="hover:text-accent-300">
               145brice@gmail.com
             </a>
-            <p>Mount Juliet, TN</p>
+            <p>Old Hickory, TN</p>
           </div>
         </section>
 
@@ -461,7 +464,7 @@ export default function App() {
               <h3 className="text-lg font-semibold text-white">Direct Contact</h3>
               <p className="text-slate-300">Email: 145brice@gmail.com</p>
               <p className="text-slate-300">Phone: 615.922.0650</p>
-              <p className="text-slate-300">Location: Mount Juliet, TN</p>
+              <p className="text-slate-300">Location: Old Hickory, TN</p>
               <a
                 href="https://github.com/145brice"
                 target="_blank"
