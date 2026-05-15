@@ -53,8 +53,7 @@ const projects = [
       'Parses lender approval PDFs, extracts conditions, rewrites them into plain borrower language, and manages the full loan pipeline. Built with Python, React, Gemini Vision API, Supabase, and Stripe. Live with paying customers.',
     tags: ['Python', 'React', 'Gemini API', 'Supabase', 'Stripe', 'Railway'],
     links: [
-      { label: 'Live Demo', href: 'https://processor-assistant-production.up.railway.app' },
-      { label: 'GitHub', href: 'https://github.com/145brice' }
+      { label: 'Live Demo', href: 'https://processor-assistant-production.up.railway.app' }
     ]
   },
   {
@@ -63,7 +62,7 @@ const projects = [
     description:
       'Scrapes building permits across Houston, Charlotte, and Phoenix, filters by trade type (electrical, plumbing, HVAC), skip-traces contacts, and delivers fresh leads monthly.',
     tags: ['Python', 'Selenium', 'BeautifulSoup', 'Skip Tracing'],
-    links: [{ label: 'GitHub', href: 'https://github.com/145brice' }]
+    links: []
   },
   {
     title: 'Property Manager Leads Service',
@@ -71,23 +70,59 @@ const projects = [
     description:
       'Identifies recently sold investor-owned properties (LLC, duplex, multi-unit) across Davidson County and 6 surrounding counties with daily skip-trace refresh.',
     tags: ['Python', 'Web Scraping', 'Nashville Market'],
-    links: [{ label: 'GitHub', href: 'https://github.com/145brice' }]
+    links: []
   }
 ]
 
-const additionalProjectLinks = [
-  'https://processor-assistant.vercel.app/',
-  'https://property-manager-dusky-five.vercel.app/',
-  'https://divorce-calc-tn.vercel.app/',
-  'https://edge-landings.vercel.app/',
-  'https://pressure-washing-taupe.vercel.app/',
-  'https://ince-electric.vercel.app/',
-  'https://leasure-time-lawn-care.vercel.app/',
-  'https://realtors-commission.vercel.app/',
-  'https://permits-front-end.vercel.app/',
-  'https://leadbot-kappa.vercel.app/',
-  'https://edgebarberapply.vercel.app/',
-  'https://dallas-mortgage.vercel.app/'
+const additionalProjects = [
+  {
+    name: 'Processor Assistant',
+    liveUrl: 'https://processor-assistant-production.up.railway.app/'
+  },
+  {
+    name: 'Property Manager',
+    liveUrl: 'https://property-manager-dusky-five.vercel.app/'
+  },
+  {
+    name: 'Divorce Calc TN',
+    liveUrl: 'https://divorce-calc-tn.vercel.app/'
+  },
+  {
+    name: 'Edge Landings',
+    liveUrl: 'https://edge-landings.vercel.app/'
+  },
+  {
+    name: 'Pressure Washing',
+    liveUrl: 'https://pressure-washing-taupe.vercel.app/'
+  },
+  {
+    name: 'Ince Electric',
+    liveUrl: 'https://ince-electric.vercel.app/'
+  },
+  {
+    name: 'Leasure Time Lawn Care',
+    liveUrl: 'https://leasure-time-lawn-care.vercel.app/'
+  },
+  {
+    name: 'Realtors Commission',
+    liveUrl: 'https://realtors-commission.vercel.app/'
+  },
+  {
+    name: 'Permits Front End',
+    liveUrl: 'https://permits-front-end.vercel.app/'
+  },
+  {
+    name: 'Leadbot',
+    liveUrl: 'https://leadbot-kappa.vercel.app/'
+  },
+  {
+    name: 'Edge Barber Apply',
+    liveUrl: 'https://edgebarberapply.vercel.app/'
+  },
+  {
+    name: 'Dallas Mortgage',
+    liveUrl: 'https://dallas-mortgage.vercel.app/'
+  }
 ]
 
 const timeline = [
@@ -317,17 +352,25 @@ export default function App() {
           <div className="mt-10 rounded-xl border border-slate-700/70 bg-navy-800/30 p-5">
             <h3 className="text-lg font-semibold text-white">Additional Live Projects</h3>
             <div className="mt-4 grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
-              {additionalProjectLinks.map((url) => (
-                <a
-                  key={url}
-                  href={url}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="truncate rounded-md border border-slate-700 bg-navy-900/50 px-3 py-2 text-sm text-slate-200 transition hover:border-accent-300 hover:text-accent-300"
-                  title={url}
+              {additionalProjects.map((project) => (
+                <div
+                  key={project.liveUrl}
+                  className="rounded-md border border-slate-700 bg-navy-900/50 p-3"
                 >
-                  {url.replace('https://', '').replace('/', '')}
-                </a>
+                  <p className="truncate text-sm text-slate-200" title={project.liveUrl}>
+                    {project.name}
+                  </p>
+                  <div className="mt-2 flex gap-2">
+                    <a
+                      href={project.liveUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="rounded border border-slate-600 px-2 py-1 text-xs text-slate-200 transition hover:border-accent-300 hover:text-accent-300"
+                    >
+                      Live
+                    </a>
+                  </div>
+                </div>
               ))}
             </div>
           </div>
@@ -427,7 +470,6 @@ export default function App() {
               >
                 <FaGithub /> github.com/145brice
               </a>
-
               <div className="rounded-lg border border-slate-700 bg-navy-900/70 p-4 text-sm text-slate-400">
                 Replace `your-form-id` in the form action with your Formspree endpoint to enable email delivery.
               </div>
