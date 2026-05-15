@@ -187,8 +187,16 @@ export default function App() {
         .join('\n')
         .trim()
 
-      // Keep the NMLS line left-aligned and add breathing room before the name line.
-      return unindented.replace(/(NMLS[^\n]*)(\n)([A-Za-z][^\n]*)/g, '$1\n\n$3')
+      const normalizedLines = unindented
+        .split('\n')
+        .map((line) => (line.includes('NMLS') ? line.trimStart() : line))
+        .join('\n')
+
+      // Ensure there is a blank line between the name line and NMLS line.
+      return normalizedLines.replace(
+        /(BRICE LEASURE)\n+(NMLS[^\n]*)/gi,
+        '$1\n\n$2'
+      )
     }
 
     const loadResumes = async () => {
