@@ -314,6 +314,8 @@ export default function App() {
                     </button>
                     <a
                       href={resume.pdf}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="rounded-md border border-slate-600 px-3 py-1.5 text-sm font-semibold text-slate-100 transition hover:border-accent-300 hover:text-accent-300"
                     >
                       Download
