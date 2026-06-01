@@ -70,7 +70,7 @@ const projects = [
     description:
       'Identifies recently sold investor-owned properties (LLC, duplex, multi-unit) across Davidson County and 6 surrounding counties with daily skip-trace refresh.',
     tags: ['Python', 'Web Scraping', 'Nashville Market'],
-    links: [{ label: 'Live Demo', href: 'https://property-manager-dusky-five.vercel.app/' }]
+    links: [{ label: 'Live Demo', href: 'https://recently-solds.vercel.app/storefront' }]
   }
 ]
 
@@ -81,7 +81,7 @@ const additionalProjects = [
   },
   {
     name: 'Property Manager',
-    liveUrl: 'https://property-manager-dusky-five.vercel.app/'
+    liveUrl: 'https://recently-solds.vercel.app/storefront'
   },
   {
     name: 'Divorce Calc TN',
