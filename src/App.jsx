@@ -57,6 +57,16 @@ const projects = [
     ]
   },
   {
+    title: 'Tax Delinquency Leads',
+    tagline: 'Skip-traced tax-delinquent property leads',
+    description:
+      'Pulls public tax delinquency records, organizes and filters them by county, and delivers skip-traced contact data for distressed property owners — turning raw public records into actionable real estate leads.',
+    tags: ['Python', 'Web Scraping', 'Skip Tracing', 'Public Records'],
+    links: [
+      { label: 'Live Demo', href: 'https://tax-delinquencies.vercel.app/' }
+    ]
+  },
+  {
     title: 'Contractor Leads SaaS',
     tagline: 'Multi-city construction permit scraping platform',
     description:
